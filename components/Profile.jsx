@@ -10,12 +10,13 @@ const Profile = ({name, desc, data, handleEdit, handleDelete}) => {
         <p className="text-left desc">{desc}</p>
         <div className="mt-16 snippet_layout">
             {
-                data.map((post) => (
+                data.length !== 0 ? (data.map((post) => (
                 <SnippetCard key={post._id}
-                            post = {post}
-                            handleEdit = {() => {handleEdit && handleEdit(post)}}
-                            handleDelete = {() => {handleDelete && handleDelete(post)}}/>
+                              post = {post}
+                              handleEdit = {() => {handleEdit && handleEdit(post)}}
+                              handleDelete = {() => {handleDelete && handleDelete(post)}}/>
                 ))
+              ) : (<div className="w-full text-3xl text-gray-400">No posts yet</div>)
             }
         </div>
     </section>

@@ -140,7 +140,7 @@
 }
 
 .snippet_layout {
-  @apply py-8 space-y-6 sm:columns-2 sm:gap-3 xl:columns-3 ;
+  @apply py-8 space-y-6 sm:columns-2 sm:gap-3 xl:columns-3;
 }
 
 /* Feed Component */

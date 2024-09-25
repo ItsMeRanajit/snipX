@@ -10,11 +10,11 @@ export const GET = async (req, { params }) => {
       const tagSearchValue = '#' + searchValue;
       console.log(tagSearchValue)
       
-      const userFound = await User.findOne({ username: searchValue });
+      const userFound = await User.find({ username: searchValue });
       const tagFound = await Snippet.findOne({ tag: { $in : tagSearchValue} });
 
 
-      const snippetsByUser = userFound ? await Snippet.find({ creator: userFound._id}).populate('creator') : [];
+      const snippetsByUser = userFound ? await Snippet.find({ creator: { $in: userFound.map(user => user._id) } }).populate('creator') : [];
       const snippetsByTag = tagFound ? await Snippet.find({ tag: { $in : tagSearchValue} }).populate('creator') : [];
 
     
