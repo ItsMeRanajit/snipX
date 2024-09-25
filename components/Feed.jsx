@@ -1,6 +1,5 @@
 'use client'
 import { Suspense } from "react";
-import Loading from '@app/loading.jsx'
 import { CiSearch } from "react-icons/ci";
 import { IoReload } from "react-icons/io5";
 import { useState, useEffect } from "react"

@@ -1,6 +1,5 @@
 import { Suspense } from "react"
 import Feed from "@components/Feed"
-import Loading from '@app/loading.jsx'
 const Home = () => {
   return (
     <section className='flex-col w-full flex-center'>
@@ -11,9 +10,7 @@ const Home = () => {
         <p className='text-center desc'>
         <span className='text-2xl font-bold'>SnipX </span>is the go-to spot for devs to swap and snag code snippets like pros! Whether you're speeding up your workflow or helping out a fellow coder, SnipX makes sharing code quick, easy, and totally fun. 
         </p>
-        <Suspense fallback={<Loading/>}>
           <Feed/>
-        </Suspense>
     </section>
 
   )
