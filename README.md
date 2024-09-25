@@ -12,9 +12,12 @@
     This project is a full-stack CRUD (Create, Read, Update, Delete) snippet-sharing platform built with <strong>Next.js</strong>, <strong>React</strong>, <strong>Tailwind CSS</strong>, and <strong>MongoDB</strong>. It allows users to create, share, and manage code snippets with ease. The platform provides various features for efficient snippet categorization, searching, and user profile management, making it a useful tool for developers to streamline their coding workflow.
   </p>
 
+  <h2>Site link - </h2>
+  <p>https://snip-x-chi.vercel.app/</p>
+
   <h2>Home Page Preview</h2>
   <p>Here’s a preview of the homepage:</p>
-  <img src="https://github.com/snipx" alt="Home Page Preview" width="600">
+  <img src="https://github.com/ItsMeRanajit/snipX/blob/main/public/assets/images/image.png" alt="Home Page Preview" width="600">
 
   <h2>Features</h2>
   <ul>
